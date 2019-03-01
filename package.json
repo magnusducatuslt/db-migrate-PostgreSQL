@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "c_migrate": "db-migrate create migrationname2",
+    "up_migrate": "db-migrate up --config ./database.json -e pg 20190301011908-migrationname2",
+    "down_migrate": "db-migrate down --config ./database.json -e pg 20190301010034-migrationname"
+  },
+  "dependencies": {
+    "db-migrate": "^0.11.5",
+    "db-migrate-pg": "^0.5.0",
+    "pg": "^7.8.1"
+  }
+}
